@@ -49,7 +49,7 @@ python3 scripts/run_sim.py
 ```
 
 ---
-# Requirements
+## Requirements
 A `requirements.txt` file is provided for dependency installation.
 
 ```bash
