@@ -47,3 +47,11 @@ Use the runner script to execute the simulation, calculate performance metrics, 
 # Run simulation and visualization script
 python3 scripts/run_sim.py
 ```
+
+---
+# Requirements
+A `requirements.txt` file is provided for dependency installation.
+
+```bash
+pip install -r requirements.txt
+```
