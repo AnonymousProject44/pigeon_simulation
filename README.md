@@ -1,5 +1,7 @@
 # pigeon_simulation
 
+The pigeon_simulation project provides a comprehensive environment for modeling the flight dynamics and swarm behavior of fixed-wing autonomous agents. It includes a high-performance C++ kinematic simulator alongside Python tools for optimizing flocking parameters and visualizing trajectory data.
+
 ## How to build the simulator
 
 Install the required dependencies using your package manager.
@@ -16,30 +18,23 @@ Configure and build the project using CMake presets.
 cmake --workflow --preset default
 ```
 
-33How to run the simulator
-
+## How to run the simulator
 Execute the compiled binary directly from the command line.
 
 ```bash
 # Run simulator with default parameters
 ./install/bin/simulator
 ```
-
-## Command Line Arguments
 Pass arguments to set controller parameters, the number of drones, and waypoints. Append individual configurations for each drone and waypoint in sequence.
-Bash
-
 ```bash
 # Run with custom parameters
 ./install/bin/simulator 6.0 12.0 4.0 0.8 1.2 1.5 25.0 0.0 20 5
 ```
 
 ### Output Format
-Python Scripts and Fixed-Wing Control Methods
-
 The Python scripts evaluate three fixed-wing control methods: **Consensus Leaderless**, **Fixed Leader**, and **Dynamic Leader**.
 
-Use the optimizer script to fine-tune controller parameters via Covariance Matrix Adaptation Evolution Strategy (CMA).
+Use the optimizer script to fine-tune controller parameters via Covariance Matrix Adaptation Evolution Strategy (CMA-ES).
 
 ```bash
 # Run optimization script
