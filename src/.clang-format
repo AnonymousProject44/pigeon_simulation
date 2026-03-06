@@ -1,0 +1,29 @@
+BasedOnStyle: Google
+
+UseTab: Never
+IndentWidth: 4
+TabWidth: 4
+AccessModifierOffset: -3
+
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+BreakBeforeBraces: Allman
+
+IndentCaseLabels: false
+
+SpacesBeforeTrailingComments: 1
+
+AlignAfterOpenBracket: BlockIndent
+BinPackArguments: false
+BinPackParameters: false
+PackConstructorInitializers: NextLine
+BreakBeforeTemplateCloser: true
+
+IndentPPDirectives: AfterHash
+
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: False
+
+IncludeIsMainRegex: '([-_](test|unittest))?$'
+IncludeIsMainSourceRegex: '(\.tpp)$'
